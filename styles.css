@@ -17,6 +17,7 @@ body{
     --secondary_color:rgba(92,86,121,1);
     --white_blure_color_6:rgba(255, 255, 255, 0.6);
     --white_blure_color_8:rgba(255, 255, 255, 0.8);
+
 }
 .gameBody{
     width: 100vw;
@@ -28,13 +29,23 @@ body{
     align-items: center;
 }
 .mainBox{
-    width: 700px;
-    height: 450px;
+    width: 800px;
+    height: 500px;
     
     border-radius: 10px;
     display: flex;
     overflow: hidden;
     position: relative;
+}
+@media screen and (max-width: 425px){
+    .mainBox{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
 }
 .leftBox{
     width: 50%;
@@ -54,6 +65,21 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+@media screen and (max-width: 425px){
+    .leftBox{
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+    }
+    .rightBox{
+        
+        width: 100%;
+        height: 100%;
+    }
+    
+}  
+
+
 .yourTurn{
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -84,6 +110,7 @@ body{
     margin-top: 1rem;
     font-size: 1.8rem;
 }
+/* ----------buttons start---------------------------------------- */
 .btn{
     position: absolute;
     background-color: var(--white_blure_color_8);
@@ -91,7 +118,7 @@ body{
     outline: 0;
     border: none;
     padding: 8px 20px;
-    left: 350px;
+    left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -107,7 +134,28 @@ body{
 .btnHold{
     bottom: 80px;
 }
+@media screen and (max-width: 425px){
+    .btn{
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        left: auto;
+        padding: 10px 5px;
+         
+    }
+    .btnNew{
+        right:20px;
+    }
+    .btnRollDice{
+        left: 80px;
+        bottom: auto;
+    }
+    .btnHold{
+        left: 25px;
+        bottom: auto;
+    }
 
+}
+/* ----------buttons end---------------------------------------- */
 /* ---------dice start------------------------ */
 .dice{
     position: absolute;
@@ -121,6 +169,14 @@ body{
     bottom: 250px;
     display: none;
     padding: 6px;
+}
+@media screen and (max-width: 425px){
+    .dice{
+        
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+    }
 }
 .dice-show{
     display: grid;
@@ -254,7 +310,7 @@ body{
     outline: 0;
     border: none;
     padding: 8px 20px;
-    left: 350px;
+    left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
     text-transform: uppercase;
@@ -262,3 +318,13 @@ body{
     box-shadow: 0 0 4px 3px rgba(80, 79, 79, 0.199);
     
 }
+@media screen and (max-width: 425px){
+    .message{
+        font-size: 1.2rem;
+        transform: translateY(50%) rotate(90deg);
+        left: -70px;
+        bottom: 50%;
+    }
+}
+
+    
