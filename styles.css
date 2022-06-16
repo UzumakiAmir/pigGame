@@ -69,7 +69,7 @@ body{
     margin-top: 2rem;
     color: var(--primary_color);
 }
-.currenBox{
+.currentBox{
     width: 110px;
     height: 60px;
     background-color: var(--primary_color);
