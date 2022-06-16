@@ -1,1 +1,110 @@
 @import url(/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+:root{
+    --primary_color:rgba(181,65,108,1);
+    --secondary_color:rgba(92,86,121,1);
+    --white_blure_color_6:rgba(255, 255, 255, 0.6);
+    --white_blure_color_8:rgba(255, 255, 255, 0.8);
+}
+.gameBody{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(181,65,108);
+    background: linear-gradient(45deg, rgba(181,65,108,1) 29%, rgba(92,86,121,1) 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBox{
+    width: 700px;
+    height: 450px;
+    
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.leftBox{
+    width: 50%;
+    height: 100%;
+    background-color: var(--white_blure_color_6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox{
+    width: 50%;
+    height: 100%;
+    background-color: var(--white_blure_color_6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.yourTurn{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.playerNum{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.totalScore{
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: var(--primary_color);
+}
+.currenBox{
+    width: 110px;
+    height: 60px;
+    background-color: var(--primary_color);
+    border-radius: 8px;
+    text-align: center;
+    color: aliceblue;
+    padding: 5px;
+}
+.currentScore{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.btn{
+    position: absolute;
+    background-color: var(--white_blure_color_8);
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+    padding: 8px 20px;
+    left: 350px;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    box-shadow: 0 0 4px 3px rgba(80, 79, 79, 0.199);
+    cursor: pointer;
+}
+.btnNew{
+    top:30px;
+}
+.btnRollDice{
+    bottom: 100px;
+}
+.btnHold{
+    bottom: 50px;
+}
+
