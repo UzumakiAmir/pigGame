@@ -119,12 +119,15 @@ body{
     width: 70px;
     height: 70px;
     bottom: 250px;
+    display: none;
+    padding: 6px;
+}
+.dice-show{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-template-rows: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    padding: 6px;
 }
 .dice_item{
     width: 10px;
