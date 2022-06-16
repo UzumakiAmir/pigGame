@@ -102,10 +102,10 @@ body{
     top:30px;
 }
 .btnRollDice{
-    bottom: 100px;
+    bottom: 140px;
 }
 .btnHold{
-    bottom: 50px;
+    bottom: 80px;
 }
 
 /* ---------dice start------------------------ */
@@ -254,11 +254,11 @@ body{
     outline: 0;
     border: none;
     padding: 8px 20px;
-    left: 50vw;
-    bottom: 100px;
+    left: 350px;
+    bottom: 0px;
     transform: translateX(-50%);
     text-transform: uppercase;
     font-size: 1.6rem;
     box-shadow: 0 0 4px 3px rgba(80, 79, 79, 0.199);
-    cursor: pointer;
+    
 }
