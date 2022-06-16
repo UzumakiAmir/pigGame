@@ -1,7 +1,7 @@
 let player1 ={
     name:'player1',
     currentScore:0,
-    totalScore:0,
+    totalScore:90,
     class:'leftBox',
     turn:1
 };
@@ -13,8 +13,12 @@ let player2 ={
     turn:0
 };
 let player = whosTurn();
+let isGameFinished = false;
 let dice = 0;
 function rollDice(){
+    if(isGameFinished === true)
+        alert('click on newGame button');
+    else{    
     player = whosTurn();
     // generate a random number between 1 to 6
     const randNum = Math.floor(Math.random() * 6)+1;
@@ -54,7 +58,7 @@ function rollDice(){
         player.currentScore += dice;
         document.querySelector(`.${player.class} .currentBox .currentScore`).textContent = `${player.currentScore}`;
     }    
-    
+}
 }
 
 
@@ -103,8 +107,10 @@ function hold(){
     player.currentScore=0;
     document.querySelector(`.${player.class} .currentBox .currentScore`).textContent = `${player.currentScore}`;
 
-    if(player.totalScore >= 100)
+    if(player.totalScore >= 100){
         document.querySelector('.message').textContent = `✨🎉${player.name} won✨🎉`;
+        isGameFinished = true;
+    }
     else{
         changeTurn();
     }
