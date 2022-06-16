@@ -108,3 +108,138 @@ body{
     bottom: 50px;
 }
 
+/* ---------dice start------------------------ */
+.dice{
+    position: absolute;
+    background-color: rgb(231, 233, 233) ;
+    border-radius: 5px;
+    border: none;
+    left: 350px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    bottom: 250px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 6px;
+}
+.dice_item{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--primary_color);
+    display: none;
+}
+.dice_one{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+.dice_two{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.dice_three{
+    grid-column:3/4;
+    grid-row:1/2;
+}
+.dice_four{
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.dice_five{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+.dice_six{
+    grid-column:3/4;
+    grid-row:2/3;
+}
+.dice_seven{
+    grid-column:1/2;
+    grid-row:3/4;
+}
+.dice_eight{
+    grid-column:2/3;
+    grid-row:3/4;
+}
+.dice_nine{
+    grid-column:3/4;
+    grid-row:3/4;
+}
+.dice-1 .dice_five{
+    display: block;
+}
+/* -------2-------- */
+.dice-2 .dice_three{
+    display: block;
+}
+.dice-2 .dice_seven{
+    display: block;
+}
+/* --------------- */
+/* -------3------- */
+.dice-3 .dice_three{
+    display: block;
+}
+.dice-3 .dice_seven{
+    display: block;
+}
+.dice-3 .dice_five{
+    display: block;
+}
+/* --------------- */
+/* -------4-------- */
+.dice-4 .dice_one{
+    display: block;
+}
+.dice-4 .dice_three{
+    display: block;
+}
+.dice-4 .dice_seven{
+    display: block;
+}
+.dice-4 .dice_nine{
+    display: block;
+}
+/* -------------- */
+/* -------5-------- */
+.dice-5 .dice_one{
+    display: block;
+}
+.dice-5 .dice_three{
+    display: block;
+}
+.dice-5 .dice_seven{
+    display: block;
+}
+.dice-5 .dice_nine{
+    display: block;
+}
+.dice-5 .dice_five{
+    display: block;
+}
+/* -------------- */
+/* -------6-------- */
+.dice-6 .dice_one{
+    display: block;
+}
+.dice-6 .dice_three{
+    display: block;
+}
+.dice-6 .dice_seven{
+    display: block;
+}
+.dice-6 .dice_nine{
+    display: block;
+}
+.dice-6 .dice_four{
+    display: block;
+}
+.dice-6 .dice_six{
+    display: block;
+}
+/* -------------- */
+/* ---------dice end------------------------ */
