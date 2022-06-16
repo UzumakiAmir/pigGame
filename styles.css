@@ -246,3 +246,19 @@ body{
 }
 /* -------------- */
 /* ---------dice end------------------------ */
+.message{
+    position: absolute;
+    background-color: var(--secondary_color);
+    color: aliceblue;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+    padding: 8px 20px;
+    left: 50vw;
+    bottom: 100px;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    box-shadow: 0 0 4px 3px rgba(80, 79, 79, 0.199);
+    cursor: pointer;
+}
