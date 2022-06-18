@@ -161,6 +161,8 @@ function newGame(){
     player2.turn=0;
     if(document.querySelector('.rightBox').classList.contains('yourTurn'))
         document.querySelector('.rightBox').classList.remove('yourTurn');
+    if(document.querySelector('.dice').classList.contains('dice-show'))
+        document.querySelector('.dice').classList.remove('dice-show');    
 }
 document.querySelector('.btnNew').addEventListener('click', newGame);
 // -----------------------------------newGameLogic finish-----------------------------------------

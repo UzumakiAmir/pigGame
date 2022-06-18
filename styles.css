@@ -172,7 +172,6 @@ body{
 }
 @media screen and (max-width: 425px){
     .dice{
-        
         top: 50%;
         transform: translateY(-50%);
         left: 50%;

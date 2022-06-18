@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding-top: 50px;
+}
+
+.backgroundBlure{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(77, 68, 73, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    
+}
+
+.modalBox{
+    background-color: rgb(217, 231, 243);
+    width: 450px;
+    
+    padding: 40px 30px;
+    border-radius: 5px;
+    cursor: context-menu;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+@media screen and (max-width: 425px){
+    .modalBox{
+        width: 90%;
+    }
+}
+.modalBox h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+.modalBox p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.closeIcon{
+    position: absolute;
+    top :20px;
+    right: 20px;
+    font-size: 2rem;
+}
+.closeIcon:hover{
+    cursor: pointer;
+}
