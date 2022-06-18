@@ -162,7 +162,7 @@ body{
     background-color: rgb(231, 233, 233) ;
     border-radius: 5px;
     border: none;
-    left: 350px;
+    left: 50%;
     transform: translateX(-50%);
     width: 70px;
     height: 70px;
